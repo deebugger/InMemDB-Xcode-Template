@@ -2,6 +2,11 @@ This is an Xcode 7 file template, which creates an In-Memory model and store, an
 
 This is useful for unit-testing Core Data code.
 
+Preparation:
+You should place the directory 'In-Memory DB.xctemplate' in this location for Xcode to load it as a custom file template:
+
+~/Library/Developer/Xcode/Templates/Custom
+
 Basic usage:
 1. Import the template into your Tests folder with an appropriate name (such as InMem.swift)
 2. In your unit-tests you can now call InMem.context to get a fresh NSManagedObjectContext instance
