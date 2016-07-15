@@ -1,0 +1,15 @@
+This is an Xcode 7 file template, which creates an In-Memory model and store, and returns a context.
+
+This is useful for unit-testing Core Data code.
+
+Basic usage:
+1. Import the template into your Tests folder with an appropriate name (such as InMem.swift)
+2. In your unit-tests you can now call InMem.context to get a fresh NSManagedObjectContext instance
+
+Notes:
+Every time you call InMem.context, you'll get a context for a new store. This is useful because usually in unit-tests you want to start with a fersh store. The proper way to use this is to call this line at the beginning of each function, or as a constant in your unit-test file:
+
+let context = InMem.context
+
+And then use 'context' at your heart's content. Each function should now have a fresh new context to play around with.
+
